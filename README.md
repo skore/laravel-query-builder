@@ -7,6 +7,16 @@
 
 This package allows you to filter, sort and include eloquent relations based on a request. The `QueryBuilder` used in this package extends Laravel's default Eloquent builder. This means all your favorite methods and macros are still available. Query parameter names follow the [JSON API specification](http://jsonapi.org/) as closely as possible.
 
+## Important!
+
+This package is a fork of spatie/laravel-query-builder as it adds additional features that were removed and unmaintained.
+
+We'll keep them updated ASAP if possible (or raise an issue instead).
+
+**Differences between Spatie's and ours:**
+
+- Appended attributes were added back: [Check their documentation here](https://spatie.be/docs/laravel-query-builder/v4/features/appending-attributes)
+
 ## Basic usage
 
 ### Filter a query based on a request: `/users?filter[name]=John`:
