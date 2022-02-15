@@ -210,42 +210,6 @@ it('wont use sketchy field requests', function () {
     $this->assertQueryLogDoesntContain('--injection');
 });
 
-it('append fields to paginate next/previous URLs', function () {
-    TestModel::factory(9)->create();
-
-    /** @var \Illuminate\Pagination\AbstractPaginator|\Illuminate\Contracts\Pagination\LengthAwarePaginator $models */
-    $models = createQueryFromFieldRequest(['test_models' => 'name,id'])
-        ->select(['id', 'is_visible'])
-        ->allowedFields(['name', 'id'])
-        ->paginate();
-
-    $this->assertStringContainsString('fields%5Btest_models%5D=name%2Cid', $models->nextPageUrl());
-});
-
-it('append fields to simple paginate next/previous URLs', function () {
-    TestModel::factory(9)->create();
-
-    /** @var \Illuminate\Pagination\AbstractPaginator|\Illuminate\Contracts\Pagination\LengthAwarePaginator $models */
-    $models = createQueryFromFieldRequest(['test_models' => 'name,id'])
-        ->select(['id', 'is_visible'])
-        ->allowedFields(['name', 'id'])
-        ->simplePaginate();
-
-    $this->assertStringContainsString('fields%5Btest_models%5D=name%2Cid', $models->nextPageUrl());
-});
-
-it('append fields to cursor paginate next/previous URLs', function () {
-    TestModel::factory(9)->create();
-
-    /** @var \Illuminate\Pagination\AbstractPaginator|\Illuminate\Contracts\Pagination\LengthAwarePaginator $models */
-    $models = createQueryFromFieldRequest(['test_models' => 'name,id'])
-        ->select(['id', 'is_visible'])
-        ->allowedFields(['name', 'id'])
-        ->cursorPaginate();
-
-    $this->assertStringContainsString('fields%5Btest_models%5D=name%2Cid', $models->nextPageUrl());
-});
-
 // Helpers
 function createQueryFromFieldRequest(array $fields = []): QueryBuilder
 {
