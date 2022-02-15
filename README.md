@@ -11,7 +11,7 @@ This package allows you to filter, sort and include eloquent relations based on 
 
 This package is a fork of spatie/laravel-query-builder as it adds additional features that were removed and unmaintained.
 
-We'll keep them updated ASAP if possible (or raise an issue instead).
+We'll keep them updated ASAP if possible (or raise an issue instead, **but first check the differences**).
 
 **Differences between Spatie's and ours:**
 
