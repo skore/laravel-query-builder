@@ -1,15 +1,15 @@
 {
-    "name": "spatie/laravel-query-builder",
+    "name": "skorelabs/laravel-query-builder",
     "description": "Easily build Eloquent queries from API requests",
     "keywords": [
         "spatie",
         "laravel-query-builder"
     ],
-    "homepage": "https://github.com/spatie/laravel-query-builder",
+    "homepage": "https://github.com/skore/laravel-query-builder",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/spatie/laravel-query-builder/issues",
-        "source": "https://github.com/spatie/laravel-query-builder"
+        "issues": "https://github.com/skore/laravel-query-builder/issues",
+        "source": "https://github.com/skore/laravel-query-builder"
     },
     "authors": [
         {
