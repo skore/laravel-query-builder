@@ -2,6 +2,10 @@
 
 This package allows you to filter, sort and include eloquent relations based on a request. The `QueryBuilder` used in this package extends Laravel's default Eloquent builder. This means all your favorite methods and macros are still available. Query parameter names follow the [JSON API specification](http://jsonapi.org/) as closely as possible.
 
+## Notice
+
+**This package is abandoned, please use [open-southeners/laravel-apiable](https://github.com/open-southeners/laravel-apiable) instead.**
+
 ## Important!
 
 This package is a fork of spatie/laravel-query-builder as it adds additional features that were removed and unmaintained.

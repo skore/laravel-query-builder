@@ -11,6 +11,7 @@
         "issues": "https://github.com/skore/laravel-query-builder/issues",
         "source": "https://github.com/skore/laravel-query-builder"
     },
+    "abandoned": "open-southeners/laravel-apiable",
     "authors": [
         {
             "name": "Alex Vanderbist",
